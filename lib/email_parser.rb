@@ -12,7 +12,9 @@
     @emails = emails
   end
   
-  
+  def parse
+  emails.delete(',').split.uniq
+end
 end 
   
   
